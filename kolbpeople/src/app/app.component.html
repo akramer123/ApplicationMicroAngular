@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>Kolbpeople</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a [routerLink]="['/home']">
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+        <a [routerLink]="['/about']">
+          <i class="fas fa-briefcase"></i>
+          About
+        </a>
+        <a [routerLink]="['/applicationpeople']">
+          <i class="fas fa-periscope"></i>
+          People
+        </a>
+        <a [routerLink]="['/inv']">
+          <i class="fas fa-people-carry"></i>
+          Inventory
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
